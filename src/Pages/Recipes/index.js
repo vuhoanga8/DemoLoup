@@ -10,7 +10,6 @@ const Recipes = props => {
     const isLoading = useSelector((state) => state.recipesReducer.isLoading);
     const recipeData = useSelector((state) => state.recipesReducer.data?.contents || []);
 
-    console.log('get data', recipeData);
     const dispatch = useDispatch();
 
     useEffect(() => {
